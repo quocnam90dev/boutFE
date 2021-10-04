@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0 auto;
+}
+.container {
+  width: 100vw;
+  background-color: #ccc;
+  height: 800px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: initial; */
+  flex-flow: row wrap; /* = flex-direction + flex-wrap*/
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.box {
+  height: 200px;
+  padding: 10px;
+  /*
+  flex-grow
+  flex-shrink
+  flex-basis
+  flex-basis: 200px;
+  */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex: 1 1 auto;
+}
+.box p {
+  font-size: 20px;
+  color: white;
+}
+.box-1 {
+  background: orange;
+  order: 2;
+}
+
+.box-2 {
+  background: yellow;
+  flex-grow: 3;
+  order: 1;
+}
+
+.box-3 {
+  background: blue;
+}
